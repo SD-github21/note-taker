@@ -15,9 +15,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 function createNewNote(body, notesArray) {
-    console.log(body);
+    const note = body;
+    notesArray.push(note);
+    fs.writeFileSync(
+        path.join(__dirname, "./db/db.json"),
+        JSON.stringify(notesArray, null, 2)
+    );
 
-    return(body);
+    return note;
 }
 
 
@@ -31,8 +36,11 @@ app.post("/api/notes", (req, res) => {
     // Set ID using uuid npm package
     req.body.id = uuidv4();
 
+    // Add note to JSON file and notes array in this function
+    const note = createNewNote(req.body, notes);
 
-    res.json(req.body);
+
+    res.json(note);
 
 });
 
