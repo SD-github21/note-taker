@@ -5,8 +5,6 @@
 ## **Description**
 The purpose of this project was to develop an application that could be used to create, save, and delete notes. The front end of the application was already completed and provided. Therefore the project tasks entailed building the back end components, connecting the front end and back end, and then deploying the application to Heroku.
 
-<br>
-
 ## **Table of Contents**
 [User Story](#user-story)<br>
 [Acceptance Criteria](#acceptance-criteria)<br>
@@ -17,8 +15,6 @@ The purpose of this project was to develop an application that could be used to 
 [Tests](#tests)<br>
 [Assets Utilized](#assets-utilized)<br>
 [Built With](#built-with)<br>
-
-<br>
 
 ### **User Story**
 AS A small business owner<br>
@@ -42,17 +38,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 WHEN I click on the Delete icon next to each note<br>
 THEN that note disappears in the right-hand column<br>
 
-<br>
-
 ### **Installation**
-(1) Click [here](https://nodejs.org/en/) to install Node.js on your local machine if you haven't already done so. Choose the latest LTS version for the most recent stable release.<br> 
-(2) Clone this repository on your local machine.<br>
-(3) Navigate to the repository folder.<br>
-(4) Type the following command in the command line to download all required packages/modules.dependencies:<br>
-
-    npm install
-
-<br>
+No installation needed
 
 ### **Usage**
 Users simply have to click on the button "Get Started" that appears on the main landing page of the application as depicted below:
@@ -65,19 +52,12 @@ Then, they will be taken to a new page where they will see notes on the left-han
 
 Notes can be saved by the "Save" icon that will appear when a user begins writing a new note. Users can also delete notes as needed by clicking on the Delete icon (trash can) to the right of each note. 
 
-<br>
-
 ### **License**
   This project is covered under the following license: ISC<br>
   https://opensource.org/licenses/ISC
 
-
-<br>
-
 ### **Contributing**
 This project does not include any contributors
-
-<br>
 
 ### **Tests**
 No tests were used to develop this application
@@ -90,8 +70,6 @@ No tests were used to develop this application
 - db.json
 - server.js
 
-<br>
-
 ### **Built With**
 * HTML 
 * CSS 
@@ -100,8 +78,6 @@ No tests were used to develop this application
 * npm
 * Express.js
 * UUID
-
-<br>
 
  ## **Deliverable**<br>
  Application deployed on Heroku:
