@@ -1,22 +1,27 @@
 [
   {
-    "title": "Note #1",
-    "text": "This is a test note",
-    "id": "faa9c5b5-fec4-4adf-a88a-9c639f91504f"
+    "title": "First note",
+    "text": "This is a first test note",
+    "id": "7c795ab2-8480-40ea-bb0c-9eff047f03bc"
   },
   {
-    "title": "Note #2",
+    "title": "Second note",
     "text": "This is a second test note",
-    "id": "83630376-2253-42ec-ba16-0e4eaf54dee7"
+    "id": "beb71432-f046-4a39-b72d-8e51d38d4194"
   },
   {
-    "title": "Add a new note",
-    "text": "This is a new note",
-    "id": "bcfc3d74-907c-4da0-96bc-42f92e8f3015"
+    "title": "Third note",
+    "text": "This is a third test note",
+    "id": "de9d7e42-cedc-45f0-afa0-2b6743c59915"
   },
   {
-    "title": "Food items",
-    "text": "(1) Vegetables\n(2) Meat\n(3) Fruit\n(4) Juice\n(5) Bread\n(6) Dairy",
-    "id": "99230a65-5fe6-4f02-8624-a573cb307705"
+    "title": "Fourth note",
+    "text": "This is a fourth test note",
+    "id": "783ae720-8ffa-44d5-9d57-ac8510239937"
+  },
+  {
+    "title": "Delete note",
+    "text": "This is a note that can be deleted. Try it!",
+    "id": "546a6ece-a4c6-467e-ad53-855ab62e322d"
   }
 ]
