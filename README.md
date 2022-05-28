@@ -15,6 +15,7 @@ The purpose of this project was to develop an application that could be used to 
 [Tests](#tests)<br>
 [Assets Utilized](#assets-utilized)<br>
 [Built With](#built-with)<br>
+[Deliverable](#deliverable)<br>
 
 ### **User Story**
 AS A small business owner<br>
@@ -79,6 +80,6 @@ No tests were used to develop this application
 * Express.js
 * UUID
 
- ## **Deliverable**<br>
+### **Deliverable**
  Application deployed on Heroku:
  https://serene-thicket-59386.herokuapp.com/
