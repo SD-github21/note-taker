@@ -1,11 +1,22 @@
 [
   {
-    "title": "Test Title",
-    "text": "Test text"
-  },
-  {
     "title": "Note #1",
     "text": "This is a test note",
     "id": "faa9c5b5-fec4-4adf-a88a-9c639f91504f"
+  },
+  {
+    "title": "Note #2",
+    "text": "This is a second test note",
+    "id": "83630376-2253-42ec-ba16-0e4eaf54dee7"
+  },
+  {
+    "title": "Add a new note",
+    "text": "This is a new note",
+    "id": "bcfc3d74-907c-4da0-96bc-42f92e8f3015"
+  },
+  {
+    "title": "Food items",
+    "text": "(1) Vegetables\n(2) Meat\n(3) Fruit\n(4) Juice\n(5) Bread\n(6) Dairy",
+    "id": "99230a65-5fe6-4f02-8624-a573cb307705"
   }
 ]

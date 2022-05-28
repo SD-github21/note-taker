@@ -13,6 +13,7 @@ const { v4: uuidv4 } = require('uuid');
 app.use(express.urlencoded({ extended: false }));
 // Parse incoming JSON data
 app.use(express.json());
+app.use(express.static("public"));
 
 function createNewNote(body, notesArray) {
     const note = body;
@@ -25,12 +26,19 @@ function createNewNote(body, notesArray) {
     return note;
 }
 
+function getDeletedNote(id, notesArray) {
+    const result = notesArray.filter(note => note.id === id)[0];
+
+    return result;
+}
+
 
 app.get("/api/notes", (req, res) => {
 
     res.json(notes);
 
 });
+
 
 app.post("/api/notes", (req, res) => {
     // Set ID using uuid npm package
@@ -39,11 +47,39 @@ app.post("/api/notes", (req, res) => {
     // Add note to JSON file and notes array in this function
     const note = createNewNote(req.body, notes);
 
-
     res.json(note);
 
 });
 
+
+app.delete("/api/notes/:id", (req, res) => {
+    const deletedNote = getDeletedNote(req.params.id, notes);
+     index = notes.indexOf(deletedNote);
+     notes.splice(index, 1);
+     console.log(notes);
+     fs.writeFileSync(
+        path.join(__dirname, "./db/db.json"),
+        JSON.stringify(notes, null, 2)
+    );
+
+
+     return res.json(notes);
+
+   
+});
+
+
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "./public/index.html"));
+});
+
+app.get("/notes", (req, res) => {
+    res.sendFile(path.join(__dirname, "./public/notes.html"));
+});
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./public/index.html"));
+})
 
 
 app.listen(PORT, () => {
