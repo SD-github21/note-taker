@@ -4,7 +4,6 @@ const { v4: uuidv4 } = require('uuid');
 const { createNewNote, deleteNote } = require("../../lib/notes");
 const notes = require("../../db/db.json");
 
-
 // All API notes routes
 
 // GET request route
@@ -36,4 +35,5 @@ router.delete("/notes/:id", (req, res) => {
    
 });
 
+// Export single instance router to be accessible across all files within all folders
 module.exports = router;
